@@ -8,28 +8,38 @@
     <title>李世民 | 个人学术主页</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
   </head>
   <body>
     <header class="topbar">
       <div class="topbar-inner">
-        <a class="brand" href="#top">李世民</a>
-        <nav aria-label="主导航">
-          <a href="#about">简介</a>
-          <a href="#education">教育背景</a>
-          <a href="#experience">工作经历</a>
-          <a href="#awards">荣誉奖项</a>
-          <a href="#publications">公开成果</a>
-        </nav>
+        <a class="brand" href="#top"><span data-lang="zh">李世民</span><span data-lang="en">Shimin Li</span></a>
+        <div class="header-actions">
+          <nav aria-label="主导航">
+            <a href="#about"><span data-lang="zh">简介</span><span data-lang="en">About</span></a>
+            <a href="#education"><span data-lang="zh">教育背景</span><span data-lang="en">Education</span></a>
+            <a href="#experience"><span data-lang="zh">工作经历</span><span data-lang="en">Experience</span></a>
+            <a href="#awards"><span data-lang="zh">荣誉奖项</span><span data-lang="en">Awards</span></a>
+            <a href="#publications"><span data-lang="zh">公开成果</span><span data-lang="en">Publications</span></a>
+          </nav>
+          <div class="language-switch" role="group" aria-label="语言切换 / Language switch">
+            <button type="button" data-set-lang="zh" class="is-active">中文</button>
+            <button type="button" data-set-lang="en">EN</button>
+          </div>
+        </div>
       </div>
     </header>
 
     <main id="top" class="site-layout">
       <aside class="profile-card">
-        <div class="avatar" aria-hidden="true">LS</div>
-        <h1>李世民</h1>
-        <p class="name-en">Shimin Li</p>
-        <p class="profile-role">AI 算法工程师</p>
-        <p class="profile-school">计算机科学与技术硕士<br>南京理工大学</p>
+        <img class="avatar" src="assets/profile.jpg" alt="李世民的个人照片 / Portrait of Shimin Li" width="132" height="132" decoding="sync" fetchpriority="high">
+        <h1><span data-lang="zh">李世民</span><span data-lang="en">Shimin Li</span></h1>
+        <p class="name-en"><span data-lang="zh">Shimin Li</span><span data-lang="en">李世民</span></p>
+        <p class="profile-role"><span data-lang="zh">AI 算法工程师</span><span data-lang="en">AI Algorithm Engineer</span></p>
+        <p class="profile-school">
+          <span data-lang="zh">计算机科学与技术硕士<br>南京理工大学</span>
+          <span data-lang="en">M.S. in Computer Science<br>Nanjing University of Science and Technology</span>
+        </p>
         <div class="profile-links">
           <a href="mailto:lishimin@njust.edu.cn">
             <span class="link-icon" aria-hidden="true">@</span>
@@ -44,10 +54,16 @@
 
       <div class="main-content">
         <section id="about" class="panel about-panel">
-          <h2>个人简介 <span>About Me</span></h2>
-          <p>你好，我是李世民。目前就职于科大讯飞 AI 研究院，主要从事大语言模型训练、对话语义优化与生成式人工智能相关工作。我于 2025 年获得南京理工大学计算机科学与技术硕士学位。</p>
-          <p>我的研究兴趣包括大语言模型、图像生成与风格迁移、模型推理优化，以及自然语言交互。欢迎通过邮件与我交流。</p>
-          <div class="research-tags" aria-label="研究方向">
+          <h2><span data-lang="zh">个人简介 <small>About Me</small></span><span data-lang="en">About Me <small>个人简介</small></span></h2>
+          <div data-lang="zh">
+            <p>你好，我是李世民。目前就职于科大讯飞 AI 研究院，主要从事大语言模型训练、对话语义优化与生成式人工智能相关工作。我于 2025 年获得南京理工大学计算机科学与技术硕士学位。</p>
+            <p>我的研究兴趣包括大语言模型、图像生成与风格迁移、模型推理优化，以及自然语言交互。欢迎通过邮件与我交流。</p>
+          </div>
+          <div data-lang="en">
+            <p>Hello, I am Shimin Li. I currently work at the AI Research Institute of iFLYTEK, focusing on large language model training, conversational semantic optimization, and generative AI. I received my M.S. degree in Computer Science and Technology from Nanjing University of Science and Technology in 2025.</p>
+            <p>My research interests include large language models, image generation and style transfer, model inference optimization, and natural language interaction. Feel free to contact me via email.</p>
+          </div>
+          <div class="research-tags" aria-label="研究方向 / Research interests">
             <span>Large Language Models</span>
             <span>Generative AI</span>
             <span>Neural Style Transfer</span>
@@ -56,84 +72,84 @@
         </section>
 
         <section id="education" class="panel">
-          <h2>教育背景 <span>Education</span></h2>
+          <h2><span data-lang="zh">教育背景 <small>Education</small></span><span data-lang="en">Education <small>教育背景</small></span></h2>
           <div class="record-list">
             <article class="record">
               <div class="record-mark">南</div>
               <div class="record-body">
                 <div class="record-heading">
-                  <h3>南京理工大学</h3>
+                  <h3><span data-lang="zh">南京理工大学</span><span data-lang="en">Nanjing University of Science and Technology</span></h3>
                   <time>2022.09 — 2025.04</time>
                 </div>
-                <p>计算机科学与工程学院</p>
-                <p>计算机科学与技术 · 硕士</p>
+                <div data-lang="zh"><p>计算机科学与工程学院</p><p>计算机科学与技术 · 硕士</p></div>
+                <div data-lang="en"><p>School of Computer Science and Engineering</p><p>M.S. in Computer Science and Technology</p></div>
               </div>
             </article>
             <article class="record">
               <div class="record-mark">陕</div>
               <div class="record-body">
                 <div class="record-heading">
-                  <h3>陕西师范大学</h3>
+                  <h3><span data-lang="zh">陕西师范大学</span><span data-lang="en">Shaanxi Normal University</span></h3>
                   <time>2017.09 — 2021.07</time>
                 </div>
-                <p>计算机科学与技术学院</p>
-                <p>计算机科学与技术 · 学士</p>
+                <div data-lang="zh"><p>计算机科学与技术学院</p><p>计算机科学与技术 · 学士</p></div>
+                <div data-lang="en"><p>School of Computer Science and Technology</p><p>B.S. in Computer Science and Technology</p></div>
               </div>
             </article>
           </div>
         </section>
 
         <section id="experience" class="panel">
-          <h2>工作经历 <span>Experience</span></h2>
+          <h2><span data-lang="zh">工作经历 <small>Experience</small></span><span data-lang="en">Experience <small>工作经历</small></span></h2>
           <div class="record-list">
             <article class="record">
               <div class="record-mark record-mark-company">讯</div>
               <div class="record-body">
                 <div class="record-heading">
-                  <h3>科大讯飞股份有限公司 · AI 研究院</h3>
-                  <time>2024.06 — 至今</time>
+                  <h3><span data-lang="zh">科大讯飞股份有限公司 · AI 研究院</span><span data-lang="en">iFLYTEK · AI Research Institute</span></h3>
+                  <time><span data-lang="zh">2024.06 — 至今</span><span data-lang="en">Jun. 2024 — Present</span></time>
                 </div>
-                <p class="record-role">AI 算法工程师</p>
-                <p>负责大语言模型训练与对话语义优化，参与指令数据构建、日程信息提取及模型情感表达等工作。</p>
+                <div data-lang="zh"><p class="record-role">AI 算法工程师</p><p>负责大语言模型训练与对话语义优化，参与指令数据构建、日程信息提取及模型情感表达等工作。</p></div>
+                <div data-lang="en"><p class="record-role">AI Algorithm Engineer</p><p>Working on large language model training and conversational semantic optimization, including instruction data construction, schedule information extraction, and emotional expression modeling.</p></div>
               </div>
             </article>
             <article class="record">
               <div class="record-mark record-mark-company">闪</div>
               <div class="record-body">
                 <div class="record-heading">
-                  <h3>闪马智能科技有限公司</h3>
+                  <h3><span data-lang="zh">闪马智能科技有限公司</span><span data-lang="en">Shanma Intelligent Technology Co., Ltd.</span></h3>
                   <time>2024.07</time>
                 </div>
-                <p class="record-role">算法实习生</p>
-                <p>参与 Stable Diffusion 3 推理加速、国产芯片模型测试及模型运行环境自动化建设。</p>
+                <div data-lang="zh"><p class="record-role">算法实习生</p><p>参与 Stable Diffusion 3 推理加速、国产芯片模型测试及模型运行环境自动化建设。</p></div>
+                <div data-lang="en"><p class="record-role">Algorithm Intern</p><p>Worked on Stable Diffusion 3 inference acceleration, model evaluation on domestic AI chips, and automation of model runtime environments.</p></div>
               </div>
             </article>
           </div>
         </section>
 
         <section id="awards" class="panel">
-          <h2>荣誉奖项 <span>Selected Honors &amp; Awards</span></h2>
+          <h2><span data-lang="zh">荣誉奖项 <small>Selected Honors &amp; Awards</small></span><span data-lang="en">Selected Honors &amp; Awards <small>荣誉奖项</small></span></h2>
           <ul class="award-list">
-            <li><span>全国三等奖</span><p>全国研究生数学建模竞赛（华为杯）</p><time>2023</time></li>
-            <li><span>全国银奖</span><p>全国大学生算法设计与编程挑战赛春季赛、秋季赛</p><time>2023</time></li>
-            <li><span>省级二等奖</span><p>江苏省研究生数学建模竞赛</p><time>2023</time></li>
-            <li><span>省级银奖</span><p>第五届中国“互联网+”大学生创新创业大赛</p><time>2019</time></li>
-            <li><span>优胜奖</span><p>“算能杯”面向 Stable Diffusion 的图像提示语优化专项赛</p><time>—</time></li>
-            <li><span>校级荣誉</span><p>优秀研究生、研究生一等奖学金与二等奖学金</p><time>—</time></li>
+            <li><span><b data-lang="zh">全国三等奖</b><b data-lang="en">National Third Prize</b></span><p><span data-lang="zh">全国研究生数学建模竞赛（华为杯）</span><span data-lang="en">China Postgraduate Mathematical Contest in Modeling (Huawei Cup)</span></p><time>2023</time></li>
+            <li><span><b data-lang="zh">全国银奖</b><b data-lang="en">National Silver</b></span><p><span data-lang="zh">全国大学生算法设计与编程挑战赛春季赛、秋季赛</span><span data-lang="en">National College Student Algorithm Design and Programming Challenge</span></p><time>2023</time></li>
+            <li><span><b data-lang="zh">省级二等奖</b><b data-lang="en">Provincial Second Prize</b></span><p><span data-lang="zh">江苏省研究生数学建模竞赛</span><span data-lang="en">Jiangsu Postgraduate Mathematical Contest in Modeling</span></p><time>2023</time></li>
+            <li><span><b data-lang="zh">省级银奖</b><b data-lang="en">Provincial Silver</b></span><p><span data-lang="zh">第五届中国“互联网+”大学生创新创业大赛</span><span data-lang="en">5th China College Students' Internet Plus Innovation and Entrepreneurship Competition</span></p><time>2019</time></li>
+            <li><span><b data-lang="zh">优胜奖</b><b data-lang="en">Merit Award</b></span><p><span data-lang="zh">“算能杯”Stable Diffusion 图像提示语优化专项赛</span><span data-lang="en">SOPHGO Cup: Stable Diffusion Prompt Optimization Track</span></p><time>—</time></li>
+            <li><span><b data-lang="zh">校级荣誉</b><b data-lang="en">University Honors</b></span><p><span data-lang="zh">优秀研究生、研究生一等奖学金与二等奖学金</span><span data-lang="en">Outstanding Graduate Student; First- and Second-Class Graduate Scholarships</span></p><time>—</time></li>
           </ul>
         </section>
 
         <section id="publications" class="panel">
-          <h2>公开成果 <span>Publications</span></h2>
+          <h2><span data-lang="zh">公开成果 <small>Publications</small></span><span data-lang="en">Publications <small>公开成果</small></span></h2>
           <div class="publication-list">
             <article class="publication">
               <div class="publication-number">01</div>
               <div>
                 <h3>Creative style transfer for image stylization via learning neural permutation</h3>
                 <p class="authors"><strong>Shimin Li</strong>, Zedong Zhang, Gan Sun, Li-Wei H. Lehman, Jian Yang, Jun Li</p>
-                <p><em>Knowledge-Based Systems</em>, Vol. 330, Article 114368, 2025. 中科院 SCI 一区 TOP。</p>
+                <p><em>Knowledge-Based Systems</em>, Vol. 330, Article 114368, 2025. <span data-lang="zh">中科院 SCI 一区 TOP。</span><span data-lang="en">CAS Q1, Top Journal.</span></p>
                 <div class="publication-links">
-                  <a href="https://doi.org/10.1016/j.knosys.2025.114368" target="_blank" rel="noreferrer">论文 / DOI ↗</a>
+                  <a href="https://doi.org/10.1016/j.knosys.2025.114368" target="_blank" rel="noreferrer"><span data-lang="zh">论文 / DOI ↗</span><span data-lang="en">Paper / DOI ↗</span></a>
                   <a href="https://dblp.org/rec/journals/kbs/LiZSLYL25" target="_blank" rel="noreferrer">DBLP ↗</a>
                 </div>
               </div>
@@ -141,11 +157,11 @@
             <article class="publication">
               <div class="publication-number">02</div>
               <div>
-                <h3>一种目标风格化图像的 AI 生成方法</h3>
-                <p class="authors"><strong>李世民</strong>，李俊</p>
-                <p>中国发明专利，申请号：202411878042。</p>
+                <h3><span data-lang="zh">一种目标风格化图像的 AI 生成方法</span><span data-lang="en">An AI-based Method for Target-style Image Generation</span></h3>
+                <p class="authors"><strong><span data-lang="zh">李世民</span><span data-lang="en">Shimin Li</span></strong>, <span data-lang="zh">李俊</span><span data-lang="en">Jun Li</span></p>
+                <p><span data-lang="zh">中国发明专利，申请号：202411878042。</span><span data-lang="en">Chinese Invention Patent, Application No. 202411878042.</span></p>
                 <div class="publication-links">
-                  <a href="https://www.xjishu.com/zhuanli/55/202411878042.html" target="_blank" rel="noreferrer">专利详情 ↗</a>
+                  <a href="https://www.xjishu.com/zhuanli/55/202411878042.html" target="_blank" rel="noreferrer"><span data-lang="zh">专利详情 ↗</span><span data-lang="en">Patent ↗</span></a>
                 </div>
               </div>
             </article>
@@ -153,21 +169,32 @@
         </section>
 
         <section class="panel">
-          <h2>代表项目 <span>Selected Project</span></h2>
+          <h2><span data-lang="zh">代表项目 <small>Selected Project</small></span><span data-lang="en">Selected Project <small>代表项目</small></span></h2>
           <article class="project">
             <div class="record-heading">
-              <h3>基于 Unity3D 的校园 VR 导览系统</h3>
+              <h3><span data-lang="zh">基于 Unity3D 的校园 VR 导览系统</span><span data-lang="en">Unity3D-based Campus VR Tour System</span></h3>
               <time>2019.09 — 2021.11</time>
             </div>
-            <p class="record-role">国家级大学生创新训练项目 · 第一主持人</p>
-            <p>结合虚拟现实、3D 建模、腾讯云 ECS 与 CDN，完成 B/S 架构的校园展示和导览系统。项目获评优秀大学生创新创业训练项目，并取得软件著作权 2020SR1035791。</p>
+            <div data-lang="zh"><p class="record-role">国家级大学生创新训练项目 · 第一主持人</p><p>结合虚拟现实、3D 建模、腾讯云 ECS 与 CDN，完成 B/S 架构的校园展示和导览系统。项目获评优秀大学生创新创业训练项目，并取得软件著作权 2020SR1035791。</p></div>
+            <div data-lang="en"><p class="record-role">National College Student Innovation Training Program · Project Lead</p><p>Developed a browser-based campus visualization and navigation system using virtual reality, 3D modeling, Tencent Cloud ECS, and CDN. The project received an Outstanding Project award and software copyright No. 2020SR1035791.</p></div>
           </article>
+        </section>
+
+        <section id="hobbies" class="panel">
+          <h2><span data-lang="zh">兴趣爱好 <small>Hobbies</small></span><span data-lang="en">Hobbies <small>兴趣爱好</small></span></h2>
+          <p class="hobby-intro"><span data-lang="zh">工作和研究之外，我喜欢通过运动与游戏放松自己。</span><span data-lang="en">Outside work and research, I enjoy staying active through sports and relaxing with games.</span></p>
+          <ul class="hobby-list">
+            <li><span class="hobby-icon" aria-hidden="true">🏀</span><strong><span data-lang="zh">篮球</span><span data-lang="en">Basketball</span></strong></li>
+            <li><span class="hobby-icon" aria-hidden="true">🏸</span><strong><span data-lang="zh">羽毛球</span><span data-lang="en">Badminton</span></strong></li>
+            <li><span class="hobby-icon" aria-hidden="true">⚽</span><strong><span data-lang="zh">各类球类运动</span><span data-lang="en">Ball Sports</span></strong></li>
+            <li><span class="hobby-icon hobby-icon-text" aria-hidden="true">CS2</span><strong><span data-lang="zh">CS2 忠实玩家</span><span data-lang="en">Dedicated CS2 Player</span></strong></li>
+          </ul>
         </section>
       </div>
     </main>
 
     <footer>
-      <p>© 2026 李世民 · Last updated July 2026</p>
+      <p><span data-lang="zh">© 2026 李世民 · 最后更新于 2026 年 7 月</span><span data-lang="en">© 2026 Shimin Li · Last updated July 2026</span></p>
     </footer>
   </body>
 </html>

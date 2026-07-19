@@ -11,6 +11,9 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html [data-lang="en"] { display: none; }
+html.lang-en [data-lang="zh"] { display: none; }
+html.lang-en [data-lang="en"] { display: revert; }
 body {
   margin: 0;
   color: var(--text);
@@ -35,9 +38,13 @@ a:hover { text-decoration: underline; }
 }
 .brand { color: #fff; font-size: 1.12rem; font-weight: 700; }
 .brand:hover { text-decoration: none; }
+.header-actions { display: flex; align-items: center; gap: 24px; }
 nav { display: flex; gap: 25px; }
 nav a { color: #d3d6d9; font-size: .9rem; }
 nav a:hover { color: #fff; text-decoration: none; }
+.language-switch { display: flex; padding: 2px; background: #2f3337; border-radius: 5px; }
+.language-switch button { padding: 4px 8px; color: #cfd2d5; background: transparent; border: 0; border-radius: 3px; cursor: pointer; font: inherit; font-size: .75rem; }
+.language-switch button.is-active { color: #24282c; background: #fff; }
 
 .site-layout {
   width: min(calc(100% - 40px), 1110px);
@@ -63,14 +70,12 @@ nav a:hover { color: #fff; text-decoration: none; }
 .avatar {
   width: 132px;
   height: 132px;
-  display: grid;
-  place-items: center;
+  display: block;
   margin: 0 auto 17px;
-  color: #fff;
-  background: #59636d;
   border-radius: 50%;
-  font: 500 2.25rem Georgia, serif;
-  letter-spacing: .04em;
+  object-fit: cover;
+  object-position: 50% 38%;
+  border: 3px solid #f0f2f4;
 }
 .profile-card h1 { margin: 0; font-size: 1.55rem; line-height: 1.35; }
 .name-en { margin: 2px 0 14px; color: var(--muted); font-size: .84rem; }
@@ -93,7 +98,7 @@ nav a:hover { color: #fff; text-decoration: none; }
 .main-content { display: grid; gap: 16px; }
 .panel { padding: 30px 32px; scroll-margin-top: 18px; }
 .panel h2 { margin: 0 0 22px; font-size: 1.18rem; line-height: 1.3; }
-.panel h2 span { margin-left: 7px; color: #8a9096; font-size: .72rem; font-weight: 500; letter-spacing: .03em; }
+.panel h2 small { margin-left: 7px; color: #8a9096; font-size: .72rem; font-weight: 500; letter-spacing: .03em; }
 .about-panel p { max-width: 760px; margin: 0 0 12px; }
 .research-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .research-tags span { padding: 4px 10px; color: #4d5964; background: #f2f4f6; border: 1px solid #e4e8eb; border-radius: 4px; font-size: .76rem; }
@@ -123,6 +128,7 @@ nav a:hover { color: #fff; text-decoration: none; }
 .award-list li { display: grid; grid-template-columns: 105px minmax(0, 1fr) 48px; gap: 15px; padding: 8px 0; border-bottom: 1px dashed #e7e9eb; }
 .award-list li:last-child { border-bottom: 0; }
 .award-list span { color: #6e757c; font-size: .78rem; }
+.award-list b { font-weight: 400; }
 .award-list p { margin: 0; }
 .award-list time { color: var(--muted); font-size: .78rem; text-align: right; }
 
@@ -139,12 +145,19 @@ nav a:hover { color: #fff; text-decoration: none; }
 
 .project h3 { font-size: 1rem; }
 .project p { margin: 5px 0 0; color: #4f555b; }
+.hobby-intro { margin: -5px 0 18px; color: var(--muted); }
+.hobby-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.hobby-list li { display: flex; align-items: center; gap: 9px; padding: 12px; background: #f6f7f8; border: 1px solid #e7e9eb; border-radius: 7px; }
+.hobby-list strong { font-size: .82rem; font-weight: 600; }
+.hobby-icon { font-size: 1.2rem; line-height: 1; }
+.hobby-icon-text { min-width: 25px; color: #506270; font-size: .68rem; font-weight: 800; }
 footer { padding: 25px 20px 35px; color: #8a9096; text-align: center; font-size: .75rem; }
 footer p { margin: 0; }
 
 @media (max-width: 780px) {
   .topbar-inner { width: calc(100% - 30px); min-height: 54px; }
   nav { display: none; }
+  .header-actions { gap: 0; }
   .site-layout { width: calc(100% - 24px); grid-template-columns: 1fr; gap: 14px; margin-top: 14px; }
   .profile-card { position: static; padding: 23px 20px; }
   .avatar { width: 96px; height: 96px; margin-bottom: 12px; font-size: 1.65rem; }
@@ -155,4 +168,5 @@ footer p { margin: 0; }
   .award-list li { grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 0; }
   .award-list span { grid-column: 1 / -1; }
   .publication { grid-template-columns: 30px minmax(0, 1fr); gap: 8px; }
+  .hobby-list { grid-template-columns: repeat(2, 1fr); }
 }
