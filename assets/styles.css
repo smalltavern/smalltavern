@@ -109,8 +109,8 @@ nav a:hover { color: #fff; text-decoration: none; }
 .record-logo { width: 29px; height: 22px; display: flex; align-items: flex-start; justify-content: flex-start; padding-top: 2px; }
 .record-logo img { display: block; max-width: 100%; object-fit: contain; }
 .logo-njust img { width: 18px; height: 18px; }
-.logo-snnu { position: relative; width: 18px; height: 18px; overflow: hidden; border-radius: 50%; }
-.logo-snnu img { position: absolute; top: 0; left: -11px; width: 40px; max-width: none; height: auto; }
+.logo-snnu { width: 18px; height: 18px; border-radius: 50%; }
+.logo-snnu img { width: 18px; height: 18px; }
 .logo-iflytek img { width: 29px; height: 9px; margin-top: 3px; }
 .record-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
 .record-heading h3 { margin: 0; font-size: 1rem; }
@@ -127,23 +127,24 @@ nav a:hover { color: #fff; text-decoration: none; }
 .award-list p { margin: 0; }
 .award-list time { color: var(--muted); font-size: .78rem; text-align: right; }
 
-.publication-list { display: grid; gap: 22px; }
-.publication { display: grid; grid-template-columns: 132px minmax(0, 1fr); align-items: start; gap: 18px; }
+.publication-list { display: grid; gap: 24px; }
+.publication { display: grid; grid-template-columns: 92px minmax(0, 1fr); align-items: start; gap: 16px; }
 .publication-body { min-width: 0; }
-.publication + .publication { padding-top: 22px; border-top: 1px solid var(--line); }
-.publication h3 { margin: 0 0 5px; font-size: 1rem; line-height: 1.4; overflow-wrap: anywhere; }
-.publication p { margin: 3px 0; color: #50565c; font-size: .84rem; overflow-wrap: anywhere; }
+.publication + .publication { padding-top: 24px; border-top: 1px solid var(--line); }
+.publication h3 { margin: -2px 0 5px; font-size: 1.16rem; font-weight: 500; line-height: 1.3; overflow-wrap: anywhere; }
+.publication p { margin: 3px 0; color: #50565c; font-size: .8rem; overflow-wrap: anywhere; }
 .publication .authors { color: var(--text); }
 .publication .venue { color: #5d6670; font-style: italic; }
-.publication .publication-summary { margin-top: 7px; color: #505960; line-height: 1.55; }
-.publication-thumbnail { width: 132px; height: 88px; display: grid; place-items: center; margin: 0; padding: 5px; overflow: hidden; background: #f7f9fa; border: 1px solid #e1e5e8; border-radius: 4px; }
+.publication-badge { display: inline-block; margin-left: 5px; padding: 1px 5px; color: #fff; background: #27a95f; border-radius: 3px; font-size: .66rem; font-style: normal; font-weight: 600; vertical-align: 1px; }
+.publication .publication-summary { margin-top: 6px; color: #5a6269; line-height: 1.5; }
+.publication-thumbnail { width: 88px; height: 58px; display: grid; place-items: center; margin: 0; padding: 2px; overflow: hidden; background: #fff; border: 0; border-radius: 2px; }
 .publication-thumbnail a { display: block; width: 100%; }
-.publication-thumbnail img { display: block; width: 100%; height: 76px; object-fit: contain; }
-.patent-thumbnail { align-content: center; color: #6784a1; background: linear-gradient(135deg, #f3f7fa, #e8eff5); text-align: center; }
-.patent-thumbnail span { font: 700 1.2rem Georgia, serif; }
+.publication-thumbnail img { display: block; width: 100%; height: 54px; object-fit: contain; }
+.patent-thumbnail { width: 48px; height: 45px; margin-left: 18px; align-content: center; color: #5b7fa2; background: #eef4f8; text-align: center; }
+.patent-thumbnail span { font: 700 1rem Georgia, serif; }
 .patent-thumbnail small { display: block; margin-top: 1px; font-size: .58rem; letter-spacing: .12em; }
-.publication-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
-.publication-links a { font-size: .78rem; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+.publication-links a { font-size: .8rem; }
 
 .project h3 { font-size: 1rem; }
 .project p { margin: 5px 0 0; color: #4f555b; }
@@ -172,12 +173,13 @@ footer p { margin: 0; }
   .record { grid-template-columns: 29px minmax(0, 1fr); gap: 6px; }
   .record-logo { width: 27px; }
   .logo-njust img { width: 17px; height: 17px; }
-  .logo-snnu { width: 17px; height: 17px; }
-  .logo-snnu img { left: -10px; width: 38px; }
+  .logo-snnu,
+  .logo-snnu img { width: 17px; height: 17px; }
   .logo-iflytek img { width: 27px; }
-  .publication { grid-template-columns: 88px minmax(0, 1fr); gap: 11px; }
-  .publication-thumbnail { width: 88px; height: 64px; padding: 4px; }
-  .publication-thumbnail img { height: 54px; }
-  .publication h3 { font-size: .9rem; }
+  .publication { grid-template-columns: 72px minmax(0, 1fr); gap: 10px; }
+  .publication-thumbnail { width: 70px; height: 48px; padding: 1px; }
+  .publication-thumbnail img { height: 46px; }
+  .patent-thumbnail { width: 42px; height: 40px; margin-left: 14px; }
+  .publication h3 { font-size: 1rem; }
   .hobby-list { grid-template-columns: repeat(2, 1fr); }
 }
