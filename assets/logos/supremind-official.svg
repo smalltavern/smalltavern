@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 82" role="img" aria-labelledby="title">
-  <title id="title">闪马智能 Supremind</title>
-  <g fill="none" stroke="#2964d7" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
-    <path d="M18 56 44 21l22 19-22 21-14-12"/>
-    <path d="m49 56 20-18 17 14"/>
-  </g>
-  <text x="101" y="39" fill="#202b3c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" font-weight="700">闪马智能</text>
-  <text x="102" y="64" fill="#2964d7" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">SUPREMIND</text>
-</svg>
