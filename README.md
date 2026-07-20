@@ -54,7 +54,7 @@
 *Knowledge-Based Systems*, 2025 · CAS Q1 Top Journal
 
 [![Paper](https://img.shields.io/badge/Paper-DOI-2F80ED?style=flat-square)](https://doi.org/10.1016/j.knosys.2025.114368)
-[![Project](https://img.shields.io/badge/Project-cross__style__transfer-6F42C1?style=flat-square&logo=github)](https://github.com/smalltavern/cross_style_transfer)
+[![Project](https://img.shields.io/badge/Project-creative__style__transfer-6F42C1?style=flat-square&logo=github)](https://github.com/smalltavern/creative_style_transfer)
 
 ## 🐍 Contribution Snake
 
