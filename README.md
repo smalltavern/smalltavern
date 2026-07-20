@@ -42,8 +42,8 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=smalltavern&show_icons=true&theme=tokyonight&hide_border=true" alt="Shimin Li's GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smalltavern&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages">
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=smalltavern&theme=tokyonight" alt="Shimin Li's GitHub stats">
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=smalltavern&theme=tokyonight" alt="Top languages by repository">
 </p>
 
 ## 📚 Selected Work
