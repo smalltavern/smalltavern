@@ -102,6 +102,8 @@ nav a:hover { color: #fff; text-decoration: none; }
 .about-panel p { max-width: 760px; margin: 0 0 12px; }
 .research-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .research-tags span { padding: 4px 10px; color: #4d5964; background: #f2f4f6; border: 1px solid #e4e8eb; border-radius: 4px; font-size: .76rem; }
+.about-hobbies { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.about-hobbies h3 { margin: 0 0 10px; color: #59636c; font-size: .82rem; font-weight: 600; }
 
 .record-list { display: grid; gap: 25px; }
 .record { display: grid; grid-template-columns: 31px minmax(0, 1fr); align-items: start; gap: 7px; }
@@ -146,11 +148,8 @@ nav a:hover { color: #fff; text-decoration: none; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
 .publication-links a { font-size: .8rem; }
 
-.project h3 { font-size: 1rem; }
-.project p { margin: 5px 0 0; color: #4f555b; }
-.hobby-intro { margin: -5px 0 18px; color: var(--muted); }
 .hobby-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0; padding: 0; list-style: none; }
-.hobby-list li { display: flex; align-items: center; gap: 9px; padding: 12px; background: #f6f7f8; border: 1px solid #e7e9eb; border-radius: 7px; }
+.hobby-list li { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: #f6f7f8; border: 1px solid #e7e9eb; border-radius: 6px; }
 .hobby-list strong { font-size: .82rem; font-weight: 600; }
 .hobby-icon { font-size: 1.2rem; line-height: 1; }
 .hobby-icon-text { min-width: 25px; color: #506270; font-size: .68rem; font-weight: 800; }
