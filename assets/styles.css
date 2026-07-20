@@ -109,8 +109,7 @@ nav a:hover { color: #fff; text-decoration: none; }
 .record-logo { width: 29px; min-height: 22px; display: flex; align-items: flex-start; justify-content: flex-start; padding-top: 2px; }
 .record-logo img { display: block; max-width: 100%; object-fit: contain; }
 .logo-njust img { width: 18px; height: 18px; }
-.logo-snnu { width: 28px; height: 28px; padding-top: 0; }
-.logo-snnu img { width: 28px; height: 28px; object-fit: contain; }
+.logo-snnu img { width: 18px; height: 18px; }
 .logo-iflytek img { width: 29px; height: 9px; margin-top: 3px; }
 .record-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
 .record-heading h3 { margin: 0; font-size: 1rem; }
@@ -172,8 +171,7 @@ footer p { margin: 0; }
   .record { grid-template-columns: 29px minmax(0, 1fr); gap: 6px; }
   .record-logo { width: 27px; }
   .logo-njust img { width: 17px; height: 17px; }
-  .logo-snnu,
-  .logo-snnu img { width: 25px; height: 25px; }
+  .logo-snnu img { width: 17px; height: 17px; }
   .logo-iflytek img { width: 27px; }
   .publication { grid-template-columns: 72px minmax(0, 1fr); gap: 10px; }
   .publication-thumbnail { width: 70px; height: 48px; padding: 1px; }
