@@ -102,17 +102,18 @@ nav a:hover { color: #fff; text-decoration: none; }
 .about-panel p { max-width: 760px; margin: 0 0 12px; }
 .research-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .research-tags span { padding: 4px 10px; color: #4d5964; background: #f2f4f6; border: 1px solid #e4e8eb; border-radius: 4px; font-size: .76rem; }
-.about-hobbies { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
-.about-hobbies h3 { margin: 0 0 10px; color: #59636c; font-size: .82rem; font-weight: 600; }
+.about-hobbies { margin-top: 16px; padding-top: 13px; border-top: 1px solid var(--line); }
+.about-panel .about-hobbies p { margin: 0; color: #59636c; font-size: .84rem; }
+.about-hobbies strong { color: #39434c; font-weight: 600; }
 
 .record-list { display: grid; gap: 25px; }
 .record { display: grid; grid-template-columns: 31px minmax(0, 1fr); align-items: start; gap: 7px; }
 .record + .record { padding-top: 24px; border-top: 1px solid var(--line); }
-.record-logo { width: 29px; height: 22px; display: flex; align-items: flex-start; justify-content: flex-start; padding-top: 2px; }
+.record-logo { width: 29px; min-height: 22px; display: flex; align-items: flex-start; justify-content: flex-start; padding-top: 2px; }
 .record-logo img { display: block; max-width: 100%; object-fit: contain; }
 .logo-njust img { width: 18px; height: 18px; }
-.logo-snnu { width: 20px; height: 20px; }
-.logo-snnu img { width: 20px; height: 20px; object-fit: contain; }
+.logo-snnu { width: 28px; height: 28px; padding-top: 0; }
+.logo-snnu img { width: 28px; height: 28px; object-fit: contain; }
 .logo-iflytek img { width: 29px; height: 9px; margin-top: 3px; }
 .record-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
 .record-heading h3 { margin: 0; font-size: 1rem; }
@@ -148,11 +149,6 @@ nav a:hover { color: #fff; text-decoration: none; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
 .publication-links a { font-size: .8rem; }
 
-.hobby-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0; padding: 0; list-style: none; }
-.hobby-list li { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: #f6f7f8; border: 1px solid #e7e9eb; border-radius: 6px; }
-.hobby-list strong { font-size: .82rem; font-weight: 600; }
-.hobby-icon { font-size: 1.2rem; line-height: 1; }
-.hobby-icon-text { min-width: 25px; color: #506270; font-size: .68rem; font-weight: 800; }
 footer { padding: 25px 20px 35px; color: #8a9096; text-align: center; font-size: .75rem; }
 footer p { margin: 0; }
 
@@ -173,12 +169,11 @@ footer p { margin: 0; }
   .record-logo { width: 27px; }
   .logo-njust img { width: 17px; height: 17px; }
   .logo-snnu,
-  .logo-snnu img { width: 19px; height: 19px; }
+  .logo-snnu img { width: 25px; height: 25px; }
   .logo-iflytek img { width: 27px; }
   .publication { grid-template-columns: 72px minmax(0, 1fr); gap: 10px; }
   .publication-thumbnail { width: 70px; height: 48px; padding: 1px; }
   .publication-thumbnail img { height: 46px; }
   .patent-thumbnail { width: 42px; height: 40px; margin-left: 14px; }
   .publication h3 { font-size: 1rem; }
-  .hobby-list { grid-template-columns: repeat(2, 1fr); }
 }
